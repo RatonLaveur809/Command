@@ -1,0 +1,4 @@
+D:\Important\универ\__now\ВДИШП\CommandPattern\CommandPattern\bin\Debug\CommandPattern.exe
+D:\Important\универ\__now\ВДИШП\CommandPattern\CommandPattern\bin\Debug\CommandPattern.pdb
+D:\Important\универ\__now\ВДИШП\CommandPattern\CommandPattern\obj\x86\Debug\CommandPattern.exe
+D:\Important\универ\__now\ВДИШП\CommandPattern\CommandPattern\obj\x86\Debug\CommandPattern.pdb

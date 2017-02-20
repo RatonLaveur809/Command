@@ -1,0 +1,194 @@
+<Project>
+  <Name>untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>untitled</Name>
+    <Language>CSharp</Language>
+    <Entities />
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>CommandPattern.exe</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Interface">
+        <Name>Command</Name>
+        <Access>Public</Access>
+        <Location left="238" top="277" />
+        <Size width="162" height="90" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">Void execute()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>Program</Name>
+        <Access>Internal</Access>
+        <Location left="26" top="12" />
+        <Size width="162" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Program()</Member>
+        <Member type="Method">private static Void Main(String[] args)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Date</Name>
+        <Access>Public</Access>
+        <Location left="26" top="224" />
+        <Size width="162" height="179" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private DateTime date</Member>
+        <Member type="Constructor">public Date()</Member>
+        <Member type="Method">public Void getFormattedDate()</Member>
+        <Member type="Method">public Void getDay()</Member>
+        <Member type="Method">private String nameMonthPropis()</Member>
+        <Member type="Method">public Void getDistance()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Invoker</Name>
+        <Access>Public</Access>
+        <Location left="213" top="12" />
+        <Size width="162" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Command what</Member>
+        <Member type="Constructor">public Invoker()</Member>
+        <Member type="Method">public Void setCommand(Command command)</Member>
+        <Member type="Method">public Void doIt()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Format</Name>
+        <Access>Public</Access>
+        <Location left="604" top="12" />
+        <Size width="162" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Date date</Member>
+        <Member type="Constructor">public Format(Date date)</Member>
+        <Member type="Method">public Void execute()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GetDay</Name>
+        <Access>Public</Access>
+        <Location left="412" top="12" />
+        <Size width="162" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Date date</Member>
+        <Member type="Constructor">public GetDay(Date date)</Member>
+        <Member type="Method">public Void execute()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Distance</Name>
+        <Access>Public</Access>
+        <Location left="491" top="224" />
+        <Size width="162" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Date date</Member>
+        <Member type="Constructor">public Distance(Date date)</Member>
+        <Member type="Method">public Void execute()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Realization" first="4" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>531</X>
+          <Y>216</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>430</X>
+          <Y>293</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="5" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>381</X>
+          <Y>252</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="6" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>452</X>
+          <Y>324</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>452</X>
+          <Y>324</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="3" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>260</X>
+          <Y>252</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>what</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>749</X>
+          <Y>166</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>94</X>
+          <Y>198</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>date</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>428</X>
+          <Y>165</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>213</X>
+          <Y>233</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>date</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="6" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>552</X>
+          <Y>377</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>254</X>
+          <Y>402</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>date</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
